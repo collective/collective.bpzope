@@ -142,6 +142,17 @@ Lastly, get information about a particular object::
     >>> utils.object_info('foo')
     {'folderish': 1, 'portal_type': 'Folder', 'id': 'foo', 'Title': 'Foo Folder'}
 
+Useful links
+============
+
+pypi
+  http://pypi.python.org/pypi/collective.bpzope
+Plone
+  http://plone.org/products/collective.bpzope
+Issue tracker
+  https://github.com/collective/collective.bpzope/issues
+git repository
+  https://github.com/collective/collective.bpzope
 
 .. _bpython: http://bpython-interpreter.org/
 .. _zc.buildout: http://pypi.python.org/pypi/zc.buildout
