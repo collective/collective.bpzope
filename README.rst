@@ -6,8 +6,8 @@ The collective.bpzope package provides the initialization file to start
 used with `zc.buildout`_ to generate the script.
 
 The code for the script was ported over from the
-`Zope IPython profile`_, and the idea was inspired by a
-`blog post by Rigel Di Scala`_.
+`Zope IPython profile`_, originally written by Stefan Eletzhofer. The
+idea for this package was inspired by a `blog post by Rigel Di Scala`_.
 
 .. contents::
 
