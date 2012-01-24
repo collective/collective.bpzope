@@ -1,7 +1,7 @@
 Introduction
 ============
 
-The collective.bpzope package provides the initialization file to start
+The bpzope package provides the initialization file to start
 `bpython`_ as a Zope interactive debugging shell. It is intended to be
 used with `zc.buildout`_ to generate the script.
 
