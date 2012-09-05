@@ -30,16 +30,30 @@ for Plone 4::
 
     [buildout]
     parts =
+        zeoserver
         instance
         bpzope
-    extends = http://dist.plone.org/release/4.1.3/versions.cfg
+        plonesite
+    extends = http://dist.plone.org/release/4.2-latest/versions.cfg
     
     [instance]
     recipe = plone.recipe.zope2instance
+    http-address = 8080
+    zeo-client = True
+    zeo-address = ${zeoserver:zeo-address}
     user = admin:admin
     eggs =
         Plone
         Pillow
+    
+    [zeoserver]
+    recipe = plone.recipe.zeoserver
+    zeo-address = 8100
+    
+    [plonesite]
+    recipe = collective.recipe.plonesite
+    zeoserver = zeoserver
+    profiles-initial = Products.CMFPlone:plone-content
     
     [bpzope]
     recipe = zc.recipe.egg
